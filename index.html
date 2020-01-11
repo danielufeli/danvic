@@ -10,11 +10,15 @@
         #welcome-section{
             height: 100vh;
         }
+        .container{
+            width: 80%;
+        }
         #navbar{
 
             position:fixed;
             top:0;
             width:100%;
+            list-style-type: none;
         }
        @media only screen and (max-width: 600px) {
             #welcome-section {
@@ -32,16 +36,17 @@
         <li><a href="#contactus">Contact us</a></li>
     </nav>
     <section id="welcome-section">
+    <div class="container">
         <h1>My Portfolio Page</h1>
-        <p><a href="http://github.com">Profile Page</a></p>
+    </div>
     </section>
 
     <section id="projects">
         <div class="project-tile">
-            <a href="#">Project 1</a>
-            <a href="#">Project 2</a>
-            <a href="#">Project 3</a>
-            <a href="#">Project 4</a>
+            <div>
+                <p><a href="http://github.com" id="profile-link" target="_blank">Profile Page</a></p>
+            </div>
+            
         </div>
     </section>
 
