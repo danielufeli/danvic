@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Web Design Project:: Personal Porfolio Webpage</title>
-
-    <style type="text/css">
-        #welcome-section{
-            height: 100vh;
-        }
-        .container{
-            width: 80%;
-        }
-        #navbar{
-
-            position:fixed;
-            top:0;
-            width:100%;
-            list-style-type: none;
-        }
-       @media only screen and (max-width: 600px) {
-            #welcome-section {
-                background-color: lightblue;
-                font-size: 50px;
-                }
-            }
-    </style>
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav id="navbar">
-        <li><a href="#welcome-section">Home</a></li>
-        <li><a href="#projects">About us</a></li>
-        <li><a href="#contactus">Contact us</a></li>
+      <div class="logo">My Portfolio</div>
+      <div class="menu">
+        <ul>
+          <li><a href="#welcome-section">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+
     <section id="welcome-section">
-    <div class="container">
-        <h1>My Portfolio Page</h1>
-    </div>
+      <div class="welcome-text">
+        <div class="welcome-text-items">
+          <h1>My Portfolio Page</h1>
+          <h2>Full Stack Web Engineer</h2>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
-        <div class="project-tile">
-            <div>
-                <p><a href="http://github.com" id="profile-link" target="_blank">Profile Page</a></p>
-            </div>
-            
+      <div class="project-tile">
+        <div class="main1">
+          <h1>Github Profile</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            omnis pariatur laboriosam qui reiciendis culpa vero quas voluptas,
+            consequatur ipsa, odit sint? Accusantium, sed ut. Inventore
+            assumenda autem corrupti iusto!
+          </p>
+          <a href="http://github.com" id="profile-link" target="_blank"
+            >Profile Page</a
+          >
         </div>
+      </div>
     </section>
 
-    <section id="contactus">
-        <h1>Contact us</h1>
+    <section id="contact">
+      <div class="contact-text">
+        <div class="contact-items">
+          <h2>Contact</h2>
+          <input type="text" name="name" id="name" placeholder="Your Name" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message Here"
+          ></textarea>
+          <a href="#">Submit</a>
+        </div>
+      </div>
     </section>
-</body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
